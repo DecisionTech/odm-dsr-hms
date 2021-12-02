@@ -1,0 +1,7 @@
+# Vocabulary Properties
+uuid = 40bfd33b-18f3-42bc-8484-9118ee9008af
+
+# com.demo.PatientHelper
+com.demo.PatientHelper#concept.label = patient helper
+com.demo.PatientHelper.aNewPatient()#phrase.navigation = a new patient
+com.demo.PatientHelper.getPatientFromDB(java.lang.String)#phrase.navigation = patient from mock DB for {0}

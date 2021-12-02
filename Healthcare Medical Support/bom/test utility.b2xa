@@ -1,0 +1,67 @@
+<b2x:translation xmlns:b2x="http://schemas.ilog.com/JRules/1.3/Translation" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.ilog.com/JRules/1.3/Translation ilog/rules/schemas/1_3/b2x.xsd">
+    <id>0022a9ac-56a7-4ee2-9113-ab5293ce0f60</id>
+    <lang>ARL</lang>
+    <class>
+        <businessName>com.demo.PatientHelper</businessName>
+        <executionName>java.lang.Object</executionName>
+        <method>
+            <name>aNewPatient</name>
+            <body language="arl"><![CDATA[
+            //com.demo.Patient p = new com.demo.Patient();
+//p.AST = "AST";
+//java.util.ArrayList actMeds = new java.util.ArrayList();
+//actMeds.add("test");
+//p.activeMedications = actMeds;
+//p.age = 10;
+//java.util.ArrayList allergies = new java.util.ArrayList();
+//allergies.add("mahi mahi");
+//p.allergiesList = allergies;
+//p.creatineLevel = 1.1F;
+//p.encounterDX = "test";
+//p.name = "p";
+//p.patientID = "1";
+//java.util.ArrayList problems = new java.util.ArrayList();
+//problems.add("problem");
+//p.problemsList = problems;
+//p.weight = 100;
+//java.lang.System.out.println("populated patient");
+//return p;
+return null;
+            ]]></body>
+        </method>
+        <method>
+            <name>getPatientFromDB</name>
+            <parameter type="java.lang.String"/>
+            <body language="arl"><![CDATA[
+            //com.demo.database.MockDatabase md = new com.demo.database.MockDatabase();
+//java.util.Properties patients = md.loadData("patients.properties");
+//com.demo.Patient p = new com.demo.Patient();
+//java.lang.String patientFromDB = patients.getProperty(patientID);
+//java.lang.String[] patientParts = patientFromDB.split(",");
+//if (patientParts != null && patientParts.length == 10) {
+//  int intArg = new java.lang.Integer(patientParts[0]).intValue();
+//  p.AST = intArg;
+//  java.util.Vector actMeds = new java.util.Vector();
+//  actMeds.add(patientParts[1]);
+//  p.activeMedicationsList = actMeds;
+//  p.age = new java.lang.Integer(patientParts[2]).intValue();
+//  java.util.Vector allergies = new java.util.Vector();
+//  allergies.add(patientParts[3]);
+//  p.allergiesList = allergies;
+//  p.creatineLevel = new java.lang.Float(patientParts[4]).floatValue();
+//  p.encounterDX = patientParts[5];
+//  p.name = patientParts[6];
+//  p.patientID = patientParts[7];
+//  java.util.Vector problems = new java.util.Vector();
+//  problems.add(patientParts[8]);
+//  p.problemsList = problems;
+//  p.weight = new java.lang.Integer(patientParts[9]).intValue();
+//  java.lang.System.out.println("populated patient");
+//}
+
+//return p;
+return null;
+            ]]></body>
+        </method>
+    </class>
+</b2x:translation>

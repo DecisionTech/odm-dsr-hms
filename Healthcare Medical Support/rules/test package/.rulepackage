@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>test package</name>
+  <uuid>2babcb2b-b02e-421f-ad8b-a8f732de557c</uuid>
+  <documentation><![CDATA[]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

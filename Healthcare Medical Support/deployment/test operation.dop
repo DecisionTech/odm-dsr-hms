@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.ibm.rules.studio.model.decisionservice:Operation xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.rules.studio.model.decisionservice="http://com.ibm.rules.studio/model/decisionservice.ecore" xmlns:ilog.rules.studio.model.query.extractor="http://ilog.rules.studio/model/query/extractor.ecore" rulesetName="test_operation" usingRuleflow="true" ruleflowName="test flow" usingExtractor="true" targetRuleProjectName="Healthcare Medical Support">
+  <name>test operation</name>
+  <uuid>38fab78e-3978-4e5e-bb45-bdf4d07f455a</uuid>
+  <referencedVariables variableName="patient" variableSetName="patient" direction="OUT">
+    <variableSet href="../rules/variables.var#969d0184-8b31-475a-b523-00d675e6d6ca"/>
+  </referencedVariables>
+  <referencedVariables variableName="patientID" variableSetName="patientID">
+    <variableSet href="../rules/variables.var#969d0184-8b31-475a-b523-00d675e6d6ca"/>
+  </referencedVariables>
+  <ruleflow href="../rules/test%20flow.rfl#6ae63a4f-f723-4c5c-93d8-490e2401ed70"/>
+  <extractor xsi:type="ilog.rules.studio.model.query.extractor:QueryExtractor" name="test operation_extractor" validator="Default Validator"/>
+  <targetRuleProject href="../../Healthcare%20Medical%20Support#24e395d5-ee80-4175-bc78-ae15e935b070"/>
+</com.ibm.rules.studio.model.decisionservice:Operation>

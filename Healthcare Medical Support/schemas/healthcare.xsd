@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.company.com" xmlns="http://www.company.com">
+	
+	<xsd:element name="patient" type="Patient"/>
+	
+	<xsd:complexType name="Patient">
+		<xsd:sequence>
+			<xsd:element name="patientID" type="xsd:string"/>
+			<xsd:element name="age" type="xsd:int"/>
+			<xsd:element name="name" type="xsd:string"/>
+			<xsd:element name="weight" type="xsd:int"/>
+			<xsd:element name="AST" type="xsd:int"/>
+			<xsd:element name="activeMedications" type="Medication" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="recommendedDrug" type="Medication" nillable="true" minOccurs="0"/>
+			<xsd:element name="recommendedDose" type="xsd:string" nillable="true" minOccurs="0"/>
+			<xsd:element name="creatineLevel" type="xsd:float"/>
+			<xsd:element name="allergies" type="Medication" minOccurs="0" maxOccurs="unbounded"/>
+			<xsd:element name="encounterDX" type="Disease"/>
+			<xsd:element name="problems" type="xsd:string" maxOccurs="unbounded" minOccurs="0"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:simpleType name="Disease">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Acute sinusitis"/>
+			<xsd:enumeration value="Diabetes"/>
+			<xsd:enumeration value="Mild immunecompromise"/>
+			<xsd:enumeration value="Mild liver disease"/>
+			<xsd:enumeration value="Significant liver disease"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	
+	<xsd:simpleType name="Medication">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Amoxicillin"/>
+			<xsd:enumeration value="Cefuroxime"/>
+			<xsd:enumeration value="Coumadin"/>
+			<xsd:enumeration value="Levofloxacin"/>
+			<xsd:enumeration value="Penicillin"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

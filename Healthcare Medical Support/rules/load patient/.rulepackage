@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>load patient</name>
+  <uuid>046569c0-65cc-4fae-a813-5182c8b02548</uuid>
+</ilog.rules.studio.model.base:RulePackage>

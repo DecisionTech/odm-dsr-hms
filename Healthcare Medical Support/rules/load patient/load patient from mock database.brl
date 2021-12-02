@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>load patient from mock database</name>
+  <uuid>2b9ca31b-a1c0-49e8-b599-262bcd9075f3</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[
+then 
+	set 'the patient' to patient from mock DB for 'the patient ID' ; 
+	print the name of this rule ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

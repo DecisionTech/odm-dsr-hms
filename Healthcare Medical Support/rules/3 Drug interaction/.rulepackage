@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>3 Drug interaction</name>
+  <uuid>328b35a3-427d-4896-8b5b-b4f8e65b6374</uuid>
+</ilog.rules.studio.model.base:RulePackage>

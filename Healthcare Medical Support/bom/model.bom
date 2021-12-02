@@ -1,0 +1,64 @@
+
+property loadGetterSetterAsProperties "true"
+property origin "xom:/Healthcare Medical Support//Data Provider XOM"
+property uuid "9c21ec29-3570-48c3-bfd2-6381f5292e59"
+package com.demo;
+
+
+public class Medication
+        property automaticVariable "true"
+        property "com.ibm.rules.domainProvider.msexcel.b2xColumn" "1"
+        property "com.ibm.rules.domainProvider.msexcel.hasHeader" "true"
+        property "com.ibm.rules.domainProvider.msexcel.labelColumn.en" "2"
+        property "com.ibm.rules.domainProvider.msexcel.sheetIndex" "0"
+        property "com.ibm.rules.domainProvider.msexcel.valueColumn" "0"
+        property domainProviderResource "domains.xlsx"
+        property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
+{
+    domain {static coumadin, static levoflaxin, static penicillin, static amoxicillin, static cefuroxime}
+    public string NDC;
+    public static final readonly com.demo.Medication amoxicillin;
+    public static final readonly com.demo.Medication cefuroxime;
+    public static final readonly com.demo.Medication coumadin;
+    public static final readonly com.demo.Medication levoflaxin;
+    public string name;
+    public static final readonly com.demo.Medication penicillin;
+    public Medication(string arg1, string arg2);
+    public void doit();
+    public boolean equals(object arg);
+    public string toString();
+}
+
+public class Patient
+{
+    public int AST;
+    public java.util.ArrayList activeMedications domain 0,* class com.demo.Medication;
+    public int age;
+    public java.util.ArrayList allergies domain 0,* class com.demo.Medication;
+    public float creatineLevel;
+    public string encounterDX;
+    public java.util.ArrayList messages domain 0,* class string;
+    public string name;
+    public string patientID;
+    public java.util.ArrayList problems domain 0,* class string;
+    public string recommendedDose;
+    public com.demo.Medication recommendedDrug;
+    public readonly string recommendedDrugString;
+    public int weight;
+    public Patient();
+    public void addMessage(string arg);
+    public void addProblem(string arg);
+    public boolean hasAllergyWith(com.demo.Medication arg);
+    public void setRecommendedDrugString(com.demo.Medication arg);
+}
+
+package com.demo.database;
+
+
+public class MockDatabase
+{
+    public MockDatabase();
+    public java.util.Properties loadData(string arg);
+    public static void test();
+}
+

@@ -1,0 +1,11 @@
+
+property uuid "45afe267-e875-4c2d-b499-ecbb0a9d0a95"
+package com.demo;
+
+
+public class PatientHelper
+{
+    public static final com.demo.Patient aNewPatient();
+    public static final com.demo.Patient getPatientFromDB(string patientID);
+}
+

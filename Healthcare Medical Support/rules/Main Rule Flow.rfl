@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.ruleflow:RuleFlow xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.ruleflow="http://ilog.rules.studio/model/ruleflow.ecore">
+  <name>Main Rule Flow</name>
+  <uuid>dfec0e18-fb49-4c4d-ae3c-ff72c0628fa8</uuid>
+  <locale>en_US</locale>
+  <categories>any</categories>
+  <rfModel><Ruleflow xmlns="http://schemas.ilog.com/Rules/7.0/Ruleflow">
+    <Body>
+        <TaskList>
+            <StartTask Identifier="task_3">
+                <Actions Language="irl"><![CDATA[ Iterator it = patient.activeMedications.iterator();
+  while (it.hasNext()) {
+ 	context.insert((com.demo.Medication)it.next());
+ }]]></Actions>
+            </StartTask>
+            <StopTask Identifier="task_4">
+                <Actions Language="bal"><![CDATA[print "Active medications: " ;
+for each medication in the active medications of 'the patient' :  
+- print the name of this medication ; 
+print "Recommended drug: " + the name of the recommended drug of 'the patient' ;
+print "Recommended dose: " + the recommended dose of 'the patient' ;
+print "NR lab test for 5 days in future is posted as a laboratory order" ;
+print "List of patient problems:" ;
+for each string in the problems of 'the patient' :
+- print "  - " + this string , ;]]></Actions>
+            </StopTask>
+            <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="Inferencing subroutines" Ordering="Default">
+                <RuleList>
+                    <Package Name="1 Infer Facts"/>
+                </RuleList>
+            </RuleTask>
+            <RuleTask ExecutionMode="RetePlus" ExitCriteria="None" Identifier="Drug interaction" Ordering="Default">
+                <RuleList>
+                    <Package Name="3 Drug interaction"/>
+                </RuleList>
+            </RuleTask>
+            <SubflowTask Identifier="subflow_0" Uuid="3b2bcfb7-e800-4fac-91c3-b650af55ff40"/>
+        </TaskList>
+        <NodeList>
+            <TaskNode Identifier="node_0" Task="task_3"/>
+            <TaskNode Identifier="node_1" Task="task_4"/>
+            <TaskNode Identifier="node_2" Task="Inferencing subroutines"/>
+            <TaskNode Identifier="node_6" Task="Drug interaction"/>
+            <TaskNode Identifier="node_3" Task="subflow_0"/>
+        </NodeList>
+        <TransitionList>
+            <Transition Identifier="transition_2" Source="node_6" Target="node_1"/>
+            <Transition Identifier="transition_3" Source="node_0" Target="node_2"/>
+            <Transition Identifier="transition_4" Source="node_2" Target="node_3"/>
+            <Transition Identifier="transition_0" Source="node_3" Target="node_6"/>
+        </TransitionList>
+    </Body>
+    <Resources>
+        <ResourceSet Locale="en_US">
+            <Data Name="node_0#name">node_0</Data>
+            <Data Name="node_0#x">94.0906</Data>
+            <Data Name="node_0#y">63.904694</Data>
+            <Data Name="node_1#name">node_1</Data>
+            <Data Name="node_1#x">94.0906</Data>
+            <Data Name="node_1#y">373.9047</Data>
+            <Data Name="node_2#label">Infer Facts</Data>
+            <Data Name="node_2#name">node_2</Data>
+            <Data Name="node_2#x">44.0906</Data>
+            <Data Name="node_2#y">133.9047</Data>
+            <Data Name="node_6#name">node_6</Data>
+            <Data Name="node_6#x">36.11599</Data>
+            <Data Name="node_6#y">293.9047</Data>
+            <Data Name="node_3#label">Medical Decision Support Flow</Data>
+            <Data Name="node_3#name">node_3</Data>
+            <Data Name="node_3#x">-13.387917</Data>
+            <Data Name="node_3#y">213.9047</Data>
+        </ResourceSet>
+    </Resources>
+    <Properties>
+        <imports>import java.util.Iterator;
+use patient;
+</imports>
+    </Properties>
+</Ruleflow></rfModel>
+</ilog.rules.studio.model.ruleflow:RuleFlow>

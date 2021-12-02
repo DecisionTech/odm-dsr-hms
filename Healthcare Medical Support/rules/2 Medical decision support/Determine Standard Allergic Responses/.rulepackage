@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Determine Standard Allergic Responses</name>
+  <uuid>08000c88-7c64-49c1-ae70-e580dc2a555e</uuid>
+  <documentation><![CDATA[]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

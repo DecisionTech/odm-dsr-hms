@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.brl:ActionRule xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.brl="http://ilog.rules.studio/model/brl.ecore">
+  <name>test</name>
+  <uuid>01e3ebb3-5910-43d9-bfa1-6963798e52ca</uuid>
+  <locale>en_US</locale>
+  <definition><![CDATA[then
+	Create new problem for 'the patient' : "" ;]]></definition>
+</ilog.rules.studio.model.brl:ActionRule>

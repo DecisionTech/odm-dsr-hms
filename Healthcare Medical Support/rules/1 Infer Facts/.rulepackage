@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>1 Infer Facts</name>
+  <uuid>74f8ddf2-c8cb-4442-b90f-212cf92040ea</uuid>
+  <documentation><![CDATA[Conclude important facts from the data provided so that additional recommendations can be made]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

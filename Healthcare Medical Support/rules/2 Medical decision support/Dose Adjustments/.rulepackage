@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>Dose Adjustments</name>
+  <uuid>ed8ca2f4-f9f6-4c61-a53d-4c4a85ba3e81</uuid>
+  <documentation><![CDATA[]]></documentation>
+</ilog.rules.studio.model.base:RulePackage>

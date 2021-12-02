@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ilog.rules.studio.model.base:RulePackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ilog.rules.studio.model.base="http://ilog.rules.studio/model/base.ecore">
+  <name>2 Medical decision support</name>
+  <uuid>b0ebf702-b7fe-4bd2-a5ec-6d08df1bf478</uuid>
+</ilog.rules.studio.model.base:RulePackage>
