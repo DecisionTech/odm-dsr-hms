@@ -11,7 +11,7 @@ public class Patient {
 	private int AST = 0;
 	private ArrayList<Medication> activeMedications = new ArrayList<Medication>();
 	private Medication recommendedDrug;
-	private String recommendedDrugString;
+	private String recommendedDrugString = "";
 	private String recommendedDose = "";
 	private float creatineLevel = 0;
 	private ArrayList<Medication> allergies = new ArrayList<Medication>();
@@ -60,14 +60,17 @@ public class Patient {
 		return recommendedDrug;
 	}
 	public void setRecommendedDrug(Medication recommendedDrug) {
-		recommendedDrugString = recommendedDrug.getName();
+		this.setRecommendedDrugString(recommendedDrug.getName());
 		this.recommendedDrug = recommendedDrug;
 	}
 	public String getRecommendedDrugString() {
 		return recommendedDrug.getName();
 	}
 	public void setRecommendedDrugString(Medication recommendedDrug) {
-		recommendedDrugString = recommendedDrug.getName();
+		this.recommendedDrugString = recommendedDrug.getName();
+	}
+	public void setRecommendedDrugString(String recommendedDrugString) {
+		this.recommendedDrugString = recommendedDrugString;
 	}
 	public String getRecommendedDose() {
 		return recommendedDose;
@@ -85,11 +88,11 @@ public class Patient {
 		return allergies;
 	}
 	public boolean hasAllergyWith(Medication allergy){
-		return ndcAllergies.contains(allergy.getNDC());
+		return ndcAllergies.contains(allergy.getNdc());
 	}
 	public void setAllergies(ArrayList<Medication> allergies) {
 		for(int i = 0; i < allergies.size(); i++){
-			ndcAllergies.add(((Medication)allergies.get(i)).getNDC());
+			ndcAllergies.add(((Medication)allergies.get(i)).getNdc());
 		}
 		this.allergies = allergies;
 	}
@@ -118,4 +121,5 @@ public class Patient {
 	public void addMessage(String message) {
 		this.messages.add(message);
 	}
+
 }

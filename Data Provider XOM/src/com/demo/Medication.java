@@ -1,28 +1,28 @@
 package com.demo;
 
 public class Medication {
-	private String NDC;
-	private String name;
+	private String ndc = "ndc";
+	private String name = "name";
 	
 	public Medication(){
 		super();
 	}
 	
 	public Medication(String ndc, String name){
-		NDC = ndc;
+		this.ndc = ndc;
 		this.name = name;
 	}
-
-	public String getNDC() {
-		return NDC;
+	
+	public String getNdc() {
+		return ndc;
 	}
 
 	public String getName() {
 		return name;
 	}
-
-	public void setNDC(String nDC) {
-		NDC = nDC;
+	
+	public void setNdc(String ndc) {
+		this.ndc = ndc;
 	}
 
 	public void setName(String name) {
@@ -39,16 +39,16 @@ public class Medication {
 			Medication medication = ((Medication)object);
 			if(medication != null &&
 			   medication.getName() != null &&
-			   medication.getNDC() != null &&
-			   medication.getName().equalsIgnoreCase(name) &&
-			   medication.getNDC().equals(NDC)){
+			   medication.getNdc() != null &&
+			   medication.getName().equalsIgnoreCase(this.name) &&
+			   medication.getNdc().equals(this.ndc)){
 				return true;
 			}
 		}
 		return false;
 	}
 	public String toString(){
-		String string = "";
+		String string = "" + this.getName() + ", " + this.getNdc() ;
 		return string;
 	}
 }	

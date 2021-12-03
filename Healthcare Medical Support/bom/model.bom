@@ -16,7 +16,6 @@ public class Medication
         property domainValueProviderName "com.ibm.rules.domainProvider.msexcel2007"
 {
     domain {static coumadin, static levoflaxin, static penicillin, static amoxicillin, static cefuroxime}
-    public string NDC;
     public static final readonly com.demo.Medication amoxicillin;
     public static final readonly com.demo.Medication cefuroxime;
     public static final readonly com.demo.Medication coumadin;

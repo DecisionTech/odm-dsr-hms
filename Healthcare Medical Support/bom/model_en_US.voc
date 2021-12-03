@@ -3,8 +3,6 @@ uuid = 2830e4c7-3e20-480a-a003-62e71eac6811
 
 # com.demo.Medication
 com.demo.Medication#concept.label = medication
-com.demo.Medication.NDC#phrase.action = set the NDC of {this} to {NDC}
-com.demo.Medication.NDC#phrase.navigation = {NDC} of {this}
 com.demo.Medication.amoxicillin#instance.label = Amoxicillin
 com.demo.Medication.cefuroxime#instance.label = Cefuroxime
 com.demo.Medication.coumadin#instance.label = Coumadin
@@ -42,6 +40,8 @@ com.demo.Patient.recommendedDose#phrase.action = Recommended dose for {this} is 
 com.demo.Patient.recommendedDose#phrase.navigation = {recommended dose} of {this}
 com.demo.Patient.recommendedDrug#phrase.action = Recommended drug for {this} is {recommended drug}
 com.demo.Patient.recommendedDrug#phrase.navigation = {recommended drug} of {this}
+com.demo.Patient.recommendedDrugString#phrase.navigation = {recommended drug string} of {this}
+com.demo.Patient.setRecommendedDrugString(com.demo.Medication)#phrase.action = set the recommended drug string of {this} to {0}
 com.demo.Patient.weight#phrase.action = set the weight of {this} to {weight}
 com.demo.Patient.weight#phrase.navigation = {weight} of {this}
 
